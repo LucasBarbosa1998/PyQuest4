@@ -1,0 +1,9 @@
+#Questão N°1
+tempo=int(input('Digite quantas horas de viagem:'))
+velocidade=int(input('Digite a media de velocidade em km/h:')) 
+distancia=tempo*velocidade
+litros=distancia/12
+print('Tempo gasto de viagem:', tempo,'horas.') 
+print('Velocidade média na viagem:', velocidade,'Km/h.') 
+print('Distância percorrida:', distancia,'km.') 
+print('Quantidade de Litros utilizada na viagem:', litros,'Lts.')
