@@ -1,0 +1,6 @@
+Questão N°1
+soma=0
+for cont in range(10):
+    valor=float(input('Digite o valor do produto:'))
+    soma+=valor
+print('Valor da compra:',soma)
