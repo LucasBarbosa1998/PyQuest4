@@ -1,0 +1,31 @@
+#QUESTÃO 4
+
+inicia = input('Iniciar contagem? (s ou n): ')
+
+cont = 0
+
+cont_masc = 0
+
+cont_fem = 0
+
+while (inicia == 's'):
+
+    sexo = input('Digite o sexo sendo (f ou m): ')
+
+    inicia = input('continuar contagem? (s ou n): ')
+
+    cont += 1
+
+    if (sexo == 'm'):
+
+        cont_masc += 1
+
+    elif (sexo == 'f'):
+
+        cont_fem += 1
+
+print ('Contagem total: ', cont)
+
+print ('Contagem masculino: ', cont_masc)
+
+print ('Contagem Feminino: ', cont_fem)
