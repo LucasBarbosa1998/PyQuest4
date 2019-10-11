@@ -1,0 +1,31 @@
+#QUESTÃO 8
+
+cont = 0
+
+cont_alt = 0
+
+mais_alto = 0
+
+nome_alto = ''
+
+while cont <= 9:
+
+    nome   = input('Digite seu nome: ')
+
+    alt = float(input('Digite sua altura: '))   
+
+    cont += 1
+
+    cont_alt += alt
+
+    if alt > 0:
+
+        mais_alto = alt
+
+        nome_alto = nome
+
+media_alt = cont_alt / 10
+
+print ('A média da altura foi, {:.2f}'.format(media_alt))
+
+print ('A pessoa mais alta é {}, com a altura, {:.2f}'.format(nome_alto, mais_alto))
