@@ -1,0 +1,51 @@
+#QUESTÃO 6 - CÁLCULO IDADES
+
+idade = 0
+
+maior = 0
+
+menor = 0
+
+cadastrados = 0
+
+
+check = input('Iniciar contagem? (s ou n): ')
+
+while True:
+
+    if check == 's' or check =='n':
+
+        while check == 's':
+
+            idade = int(input('Digite sua idade: '))
+
+            check = input('Continuar contagem? (s ou n): ')
+
+            cadastrados += 1
+
+            if idade >= 18:
+
+                maior += 1
+
+            elif idade < 18:
+
+                menor += 1
+
+        break
+
+    else:
+
+        print ('Digitar s ou n!')
+
+        check = input('Iniciar contagem? (s ou n): ')
+
+
+per_maior = maior * 100/cadastrados
+
+per_menor = menor * 100/cadastrados
+
+print ('Quantidade cadastrados: {}'.format(cadastrados))
+
+print ('Porcentagem maior de idade: {:.2f} %'.format(per_maior))
+
+print ('Porcentagem menor de idade: {:.2f} %'.format(per_menor))
