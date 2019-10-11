@@ -1,0 +1,40 @@
+#QUESTÃO 5
+
+inicia = input('Iniciar contagem? (s ou n): ')
+
+cont = 0
+
+cont_16 = 0
+
+cont_16_18 = 0
+
+cont_18 = 0
+
+while (inicia == 's'):
+
+    alt = float(input('Digite a altura (Ex.: 1.7): '))
+
+    inicia = input('continuar contagem? (s ou n): ')
+
+    cont += 1
+
+    if (alt < 1.6):
+
+        cont_16 += 1
+
+    if (alt > 1.6 and alt < 1.8):
+
+        cont_16_18 += 1
+
+    if (alt > 1.8):
+
+        cont_18 += 1
+
+
+print ('Contagem total: ', cont)
+
+print ('Contagem menor que 1.6: ', cont_16)
+
+print ('Contagem entre 1.6 e 1.8: ', cont_16_18)
+
+print ('Contagem maior que 1.8: ', cont_18)
