@@ -1,0 +1,29 @@
+inicia = input('Iniciar contagem? (s ou n): ')
+
+cont = 0
+
+cont_impar = 0
+
+cont_par = 0
+
+while (inicia == 's'):
+
+    num = int(input('Digite um valor: '))
+
+    inicia = input('continuar contagem? (s ou n): ')
+
+    cont += 1
+
+    if (num %2 == 0):
+
+        cont_par += 1
+
+    else :
+
+        cont_impar += 1
+
+print ('Contagem total: ', cont)
+
+print ('Contagem de numeros pares: ', cont_par)
+
+print ('Contagem de números impares: ', cont_impar)
